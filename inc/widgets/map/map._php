@@ -1,0 +1,43 @@
+<?php
+/*
+Plugin Name: maps Widget
+Version: 1.2.2
+Description: a lists
+Author: Mitchell Bray
+*/
+class maps extends WP_Widget {
+		public function __construct() {
+			// Instantiate the parent object
+			parent::__construct(
+				'maps', // Base ID
+				'maps', // Name
+				array('description' => 'Create a map'), // Args
+				array('width' => 600, 'height' => 550)
+			);
+		}
+
+		public function widget($args, $instance) {
+			echo $args['before_widget'];	
+			include(__DIR__.'/views/widget.php');
+			echo $args['after_widget'];
+		}
+
+		public function form($instance) {
+			$instance = wp_parse_args((array)$instance, 
+				array(
+					'items' => '',
+					'style' => '',
+				));
+			include(__DIR__.'/views/admin.php');
+		}
+
+	function update( $new_instance, $old_instance ){
+		$old_instance['map'] = $new_instance['map'];
+		$old_instance['style'] = $new_instance['style'];
+		$old_instance['align'] = $new_instance['align'];
+		return $old_instance;
+	}
+	
+	}
+add_action('widgets_init', create_function('', 'register_widget("maps");'));
+?>

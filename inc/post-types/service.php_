@@ -1,0 +1,13 @@
+<?php
+$service = tr_post_type('Service', 'Services', array('supports' => array('title', 'editor','thumbnail' )));
+$service->id = 'service';
+$service->icon('hammer');
+$service->title = 'Enter Service Name';
+$service->form['editor'] = true; // set
+
+function add_form_content_service_editor() {
+$form = tr_form();
+}
+
+
+

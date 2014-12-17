@@ -1,0 +1,16 @@
+<?php
+$project = tr_post_type('Project', 'Projects', array('supports' => array('title','post-formats')));
+$project->id = 'project';
+$project->icon('hammer');
+$project->title = 'Enter Projects Name';
+$project->form['editor'] = true; // set
+
+function add_form_content_project_editor() {
+$form = tr_form();
+$form->editor('About');
+$form->date('date');
+$form->image('Photo');
+}
+
+
+

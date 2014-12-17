@@ -1,0 +1,64 @@
+<?php
+/*
+Plugin Name: posts Widget
+Version: 1.2.2
+Description: a posts
+Author: Mitchell Bray
+*/
+class posts extends WP_Widget {
+		public function __construct() {
+			// Instantiate the parent object
+			parent::__construct(
+				'posts', // Base ID
+				'Posts', // Name
+				array('description' => 'Create a posts'), // Args
+				array('width' => 600, 'height' => 550)
+			);
+				// Register styles
+				add_action('admin_print_styles', array( $this, 'register_admin_styles'));
+				// Register scripts
+				add_action('admin_enqueue_scripts', array( $this, 'register_admin_scripts'));
+				add_action('wp_enqueue_scripts', array( $this, 'register_widget_scripts'));
+		}
+
+		public function widget($args, $instance) {
+			echo $args['before_widget'];	
+			include(__DIR__.'/views/widget.php');
+			echo $args['after_widget'];
+		}
+
+		public function form($instance) {
+			$instance = wp_parse_args((array)$instance, 
+				array(
+					'text' => '', 
+					'type' => '', 
+					'window' => '', 
+					'style' => '',
+					'align' => '', 
+				));
+			include(__DIR__.'/views/admin.php');
+		}
+
+		public function update($new_instance, $old_instance) {
+			$instance = $old_instance;
+			$instance['text'] = $new_instance['text'];
+			$instance['type'] = $new_instance['type'];
+			$instance['window'] = $new_instance['window'];
+			$instance['style'] = $new_instance['style'];
+			$instance['align'] = $new_instance['align'];
+			return $instance;
+		}
+		function register_admin_styles(){
+			wp_enqueue_style('heading', get_template_directory_uri() .'/widgets/posts/css/theme.css');
+		}
+
+		function register_admin_scripts(){
+			wp_enqueue_script('heading-admin', get_template_directory_uri().'/widgets/posts/js/jquery.cleditor.js');
+		}
+	
+	function register_widget_scripts(){	}	
+	
+	
+	}
+add_action('widgets_init', create_function('', 'register_widget("posts");'));
+?>

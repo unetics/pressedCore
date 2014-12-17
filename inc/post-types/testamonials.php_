@@ -1,0 +1,15 @@
+<?php
+$testimonial = tr_post_type('Testimonial', 'Testimonials', array('supports' => array('title')));
+$testimonial->supports = array('title');
+$testimonial->id = 'testimonial';
+$testimonial->icon('quill');
+$testimonial->title = 'Enter Testimonial Name';
+$testimonial->form['editor'] = true; // set
+
+function add_form_content_testimonial_editor() {
+$form = tr_form();
+$form->editor('Testimonial');
+$form->text('From');
+$form->text('link');
+}
+
