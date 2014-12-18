@@ -19,10 +19,12 @@
         $form->image('FavIcon');
         $form->text('Copyright');
         $form->text('Analytics');
-        $form->items('items');
         $options = ['default' => 'default',
         			'blacky' => 'blacky'];
         $form->select('style', $options);
+        $options = ['fixed' => 'fixed',
+        			'none' => 'none'];
+        $form->select('nav', $options);
                 
         $utility->buffer('footer');
 

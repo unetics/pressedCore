@@ -16,11 +16,10 @@ require('_ps/init.php');
 add_theme_support( 'post-thumbnails' );
 
 if (is_admin()) {
-     require('admin/functions.php');
-     
+     require('admin/functions.php');    
 }
+
 require('pageBuilder/init.php');
-require('nav/init.php');
 
 // set permalink
 function set_permalink(){
@@ -33,18 +32,3 @@ function add_googleanalytics() {
 	get_template_part('partials/analitics');
 }
 add_action('wp_footer', 'add_googleanalytics');	
-
-
-function get_version()
-{
-	if ( ! empty( wp_get_theme()->parent()->Version ) )
-	{
-	return wp_get_theme()->parent()->Version;
-	}
-	else
-	{
-	return wp_get_theme()->Version;
-	}
-}
-
-

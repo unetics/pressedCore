@@ -1,7 +1,7 @@
 <?php
-	
-$layouts['home-page'] = array (
+$layouts[] = array (
   'name' => 'Default home Layout',
+  'description' => 'Default home Layout',
   'widgets' => 
   array (
     0 => 
