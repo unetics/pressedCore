@@ -21,14 +21,14 @@ class tr_field_gallerys extends tr_field {
     if(is_array($images)) {
       foreach($images as $id) {
         $input = tr_html::input('hidden', $name . '[]', $id);
-        $input2 = tr_html::input('', $name . '[title]', $id);
-        
+        $infobut ="<a href='#' class='dashicons dashicons-trash'></a>";
         
         $image = wp_get_attachment_image($id, 'thumbnail');
 
         $list .= tr_html::element('li', array(
           'class' => 'image-picker-placeholder'
-        ), '<a href="#remove" class="tr-icon-remove2" title="Remove Image"></a><a href="#remove" title="Info"><div class="dashicons dashicons-trash">'.$id.'</div></a>' . $image . $input .$input2 );
+        ), 
+        '<a href="#remove" class="tr-icon-remove2" title="Remove Image"></a><a href="#remove" title="Info"><div class="dashicons dashicons-trash"></div></a>'.$infobut . $image . $input );
 
       }
     }

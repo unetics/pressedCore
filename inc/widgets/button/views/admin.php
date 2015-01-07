@@ -111,12 +111,18 @@ wp_reset_query();
 </div>
 <script>
 	 jQuery(function() {
-        jQuery('.btn-type').change(function(){
-            jQuery('.btn-types').slideUp();
-            jQuery('#' + jQuery(this).val()).slideDown();
+        jQuery('section .btn-type').change(function(){
+	        var pappa = jQuery(this).closest('section');
+	        pappa.addClass('im_active');
+            jQuery('section.im_active .btn-types').slideUp();
+            jQuery('section.im_active #' + jQuery(this).val()).slideDown();
+            pappa.removeClass('im_active');
         });
     });
-	jQuery('#' + jQuery('.btn-type').val()).slideDown();
+    jQuery('section .btn-type').change();
+
+
 	jQuery(".chosen-select").chosen({ width: "100%", search_contains:true });
 </script>
 </section>
+
