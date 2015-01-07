@@ -19,9 +19,6 @@
         $form->image('FavIcon');
         $form->text('Copyright');
         $form->text('Analytics');
-        $options = ['default' => 'default',
-        			'blacky' => 'blacky'];
-        $form->select('style', $options);
         $options = ['fixed' => 'fixed',
         			'none' => 'none'];
         $form->select('nav', $options);

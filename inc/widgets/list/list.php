@@ -10,7 +10,7 @@ class lists extends WP_Widget {
 			// Instantiate the parent object
 			parent::__construct(
 				'lists', // Base ID
-				'lists', // Name
+				'Lists', // Name
 				array('description' => 'Create a lists'), // Args
 				array('width' => 600, 'height' => 550)
 			);
@@ -37,8 +37,8 @@ class lists extends WP_Widget {
 
 		public function update($new_instance, $old_instance) {
 		$instance = $old_instance;
-        $instance['style'] = $new_instance['style'];
         
+        $instance['style'] = $new_instance['style'];
         $instance['items'] = array();
 
         if ( isset ( $new_instance['items'] ) )
@@ -49,7 +49,9 @@ class lists extends WP_Widget {
                     $instance['items'][] = $value;
             }
         }
-			return $instance;
+		
+		return $instance;
+		
 		}
 		function register_admin_styles(){}
 		function register_admin_scripts(){}	

@@ -5,7 +5,7 @@ class SiteOrigin_Panels_Widget_tile extends WP_Widget {
 			'tile',
 			'Tile Builder',
 			array(
-				'description' => 'Build a tile useing other widgets.',
+				'description' => 'Build a tile using other widgets.',
 				'panels_title' => false,
 			),
 			array(

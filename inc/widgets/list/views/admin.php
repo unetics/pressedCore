@@ -14,8 +14,8 @@ less than <?= $am ?>
 <label>Style: </label>
 	<select id="<?= $this->get_field_id('style'); ?>" name="<?= $this->get_field_name('style'); ?>">
 		<option  value="default" <?php selected('', $instance['style'], true);?> >Default</option>
-		<option  value="nostyle" <?php selected('invert', $instance['style'], true);?>>None</option>
-		<option  value="boxed" <?php selected('ghost', $instance['style'], true);?>>boxed</option>
+		<option  value="nostyle" <?php selected('nostyle', $instance['style'], true);?>>None</option>
+		<option  value="boxed" <?php selected('boxed', $instance['style'], true);?>>Boxed</option>
 	</select>
 <script>
 (function( $ ) {

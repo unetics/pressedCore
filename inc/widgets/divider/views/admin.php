@@ -7,6 +7,6 @@
 	<label>Display Line?</label>
 	<select id="<?= $this->get_field_id('line');?>" name="<?= $this->get_field_name('line'); ?>">
 		<option value="" <?php selected('', $instance['line'],true);?>>yes</option>
-		<option value="invisable" <?php selected('invisable', $instance['line'],true);?>>No</option>
+		<option value="invisible" <?php selected('invisible', $instance['line'],true);?>>No</option>
 	</select>
 </div>
