@@ -1,3 +1,8 @@
+.image-picker-placeholder img{
+	max-height: 200px;
+	width:auto; 
+}
+
 .typerocket-container {
   box-sizing: border-box;
 }

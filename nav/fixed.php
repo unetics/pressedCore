@@ -1,9 +1,11 @@
 <nav class="rmm">
 	<ul>
-		<?Php if (null !== tr_option_field("[logo]")){?>	
-				<li class="logo"><a><?= wp_get_attachment_image(tr_option_field("[logo]"));?></a></li>
-		<?php }
-
+		<?php if ( tr_option_field("[logo]") ) { ?>
+		<li class="logo">
+			<a href="/"><?php echo wp_get_attachment_image( tr_option_field("[logo]"), 'full' ); ?></a>
+		</li>
+		<?php } 
+			
 $defaults = array(
 	'menu'            => 'Menu',
 	'container'       => false,

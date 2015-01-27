@@ -2,20 +2,115 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "18270",
 "files": {
-	"\/_core\/formClass.php": {
-		"fileType": 8192,
-		"ignore": 0,
+	"\/_admin\/assets\/css\/admin.css": {
+		"fileType": 16,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_core\/formClass.php",
+		"inputAbbreviatedPath": "\/_admin\/assets\/css\/admin.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_core\/init.php": {
+	"\/_admin\/assets\/css\/chosen-sprite.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 538,
+		"inputAbbreviatedPath": "\/_admin\/assets\/css\/chosen-sprite.png",
+		"outputAbbreviatedPath": "\/_admin\/assets\/css\/chosen-sprite.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_admin\/assets\/css\/chosen-sprite@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 738,
+		"inputAbbreviatedPath": "\/_admin\/assets\/css\/chosen-sprite@2x.png",
+		"outputAbbreviatedPath": "\/_admin\/assets\/css\/chosen-sprite@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_admin\/assets\/js\/admin.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_admin\/assets\/js\/admin.js",
+		"outputAbbreviatedPath": "\/_admin\/assets\/js\/admin.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 2
+		},
+	"\/_admin\/assets\/js\/admin.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_admin\/assets\/js\/admin.min.js",
+		"outputAbbreviatedPath": "\/_admin\/assets\/js\/admin.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 2
+		},
+	"\/_admin\/assets\/js\/lib\/chosen.jquery.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_admin\/assets\/js\/lib\/chosen.jquery.js",
+		"outputAbbreviatedPath": "\/_admin\/assets\/js\/lib\/chosen.jquery.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 2
+		},
+	"\/_admin\/assets\/less\/admin.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 1,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_admin\/assets\/less\/admin.less",
+		"outputAbbreviatedPath": "\/_admin\/assets\/css\/admin.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/_admin\/assets\/less\/chosen.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 1,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_admin\/assets\/less\/chosen.less",
+		"outputAbbreviatedPath": "\/_admin\/assets\/css\/chosen.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/_admin\/functions.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_core\/init.php",
+		"inputAbbreviatedPath": "\/_admin\/functions.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -628,132 +723,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/admin\/assets\/css\/admin.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/assets\/css\/admin.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/admin\/assets\/js\/chosen.jquery.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/assets\/js\/chosen.jquery.min.js",
-		"outputAbbreviatedPath": "\/admin\/assets\/js\/chosen.jquery.min.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 2
-		},
-	"\/admin\/assets\/js\/jquery.easing.1.3.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/assets\/js\/jquery.easing.1.3.js",
-		"outputAbbreviatedPath": "\/admin\/assets\/js\/jquery.easing.1.3.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 2
-		},
-	"\/admin\/assets\/js\/jquery.geocomplete.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/assets\/js\/jquery.geocomplete.js",
-		"outputAbbreviatedPath": "\/admin\/assets\/js\/jquery.geocomplete.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 2
-		},
-	"\/admin\/assets\/js\/jquery.gmap.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/assets\/js\/jquery.gmap.js",
-		"outputAbbreviatedPath": "\/admin\/assets\/js\/jquery.gmap.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 2
-		},
-	"\/admin\/assets\/js\/jquery.quicksand.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/assets\/js\/jquery.quicksand.js",
-		"outputAbbreviatedPath": "\/admin\/assets\/js\/jquery.quicksand.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 2
-		},
-	"\/admin\/assets\/js\/jquery.scoped.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/assets\/js\/jquery.scoped.js",
-		"outputAbbreviatedPath": "\/admin\/assets\/js\/jquery.scoped.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 2
-		},
-	"\/admin\/assets\/js\/min\/custom.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/assets\/js\/min\/custom.min.js",
-		"outputAbbreviatedPath": "\/admin\/assets\/js\/min\/custom.min.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 2
-		},
-	"\/admin\/assets\/js\/scoped.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/assets\/js\/scoped.js",
-		"outputAbbreviatedPath": "\/admin\/assets\/js\/scoped.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 2
-		},
-	"\/admin\/assets\/less\/admin.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 1,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/assets\/less\/admin.less",
-		"outputAbbreviatedPath": "\/admin\/assets\/css\/admin.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/admin\/functions.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/admin\/functions.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/functions.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -762,6 +731,153 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/gallery\/carousel\/css\/img\/grabbing.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 116,
+		"inputAbbreviatedPath": "\/gallery\/carousel\/css\/img\/grabbing.png",
+		"outputAbbreviatedPath": "\/gallery\/carousel\/css\/img\/grabbing.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gallery\/carousel\/css\/owl.carousel.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gallery\/carousel\/css\/owl.carousel.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/gallery\/carousel\/css\/owl.theme.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gallery\/carousel\/css\/owl.theme.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/gallery\/carousel\/css\/owl.transitions.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gallery\/carousel\/css\/owl.transitions.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/gallery\/carousel\/init.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gallery\/carousel\/init.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/gallery\/carousel\/js\/owl.carousel.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gallery\/carousel\/js\/owl.carousel.js",
+		"outputAbbreviatedPath": "\/gallery\/carousel\/js\/owl.carousel.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 2
+		},
+	"\/gallery\/carousel\/js\/owl.carousel.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gallery\/carousel\/js\/owl.carousel.min.js",
+		"outputAbbreviatedPath": "\/gallery\/carousel\/js\/owl.carousel.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 2
+		},
+	"\/gallery\/init.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gallery\/init.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/gallery\/slider\/css\/img\/grabbing.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 116,
+		"inputAbbreviatedPath": "\/gallery\/slider\/css\/img\/grabbing.png",
+		"outputAbbreviatedPath": "\/gallery\/slider\/css\/img\/grabbing.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gallery\/slider\/css\/owl.carousel.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gallery\/slider\/css\/owl.carousel.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/gallery\/slider\/css\/owl.theme.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gallery\/slider\/css\/owl.theme.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/gallery\/slider\/css\/owl.transitions.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gallery\/slider\/css\/owl.transitions.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/gallery\/slider\/init.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gallery\/slider\/init.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/gallery\/slider\/js\/owl.carousel.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gallery\/slider\/js\/owl.carousel.js",
+		"outputAbbreviatedPath": "\/gallery\/slider\/js\/owl.carousel.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 2
+		},
+	"\/gallery\/slider\/js\/owl.carousel.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gallery\/slider\/js\/owl.carousel.min.js",
+		"outputAbbreviatedPath": "\/gallery\/slider\/js\/owl.carousel.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 2
 		},
 	"\/inc\/gallery.php": {
 		"fileType": 8192,
@@ -808,6 +924,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/inc\/post-types\/gallery.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/inc\/post-types\/gallery.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/inc\/post-types\/team.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -822,15 +947,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/inc\/post-types\/video.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/inc\/short-codes\/grid.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/short-codes\/grid.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1087,60 +1203,78 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/inc\/widgets\/faq\/css\/theme.css": {
+	"\/inc\/widgets\/gallery\/css\/theme.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/faq\/css\/theme.css",
+		"inputAbbreviatedPath": "\/inc\/widgets\/gallery\/css\/theme.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/inc\/widgets\/faq\/faq.php": {
+	"\/inc\/widgets\/gallery\/gallery.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/faq\/faq.php",
+		"inputAbbreviatedPath": "\/inc\/widgets\/gallery\/gallery.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/inc\/widgets\/faq\/js\/jquery.cleditor.js": {
+	"\/inc\/widgets\/gallery\/js\/jquery.cleditor.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/faq\/js\/jquery.cleditor.js",
-		"outputAbbreviatedPath": "\/inc\/widgets\/faq\/js\/jquery.cleditor.min.js",
+		"inputAbbreviatedPath": "\/inc\/widgets\/gallery\/js\/jquery.cleditor.js",
+		"outputAbbreviatedPath": "\/inc\/widgets\/gallery\/js\/jquery.cleditor.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 2
 		},
-	"\/inc\/widgets\/faq\/js\/trumbowyg.min.js": {
+	"\/inc\/widgets\/gallery\/js\/trumbowyg.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/faq\/js\/trumbowyg.min.js",
-		"outputAbbreviatedPath": "\/inc\/widgets\/faq\/js\/trumbowyg.min.min.js",
+		"inputAbbreviatedPath": "\/inc\/widgets\/gallery\/js\/trumbowyg.min.js",
+		"outputAbbreviatedPath": "\/inc\/widgets\/gallery\/js\/trumbowyg.min.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 2
 		},
-	"\/inc\/widgets\/faq\/views\/admin.php": {
+	"\/inc\/widgets\/gallery\/views\/admin.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/faq\/views\/admin.php",
+		"inputAbbreviatedPath": "\/inc\/widgets\/gallery\/views\/admin.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/inc\/widgets\/faq\/views\/widget.php": {
+	"\/inc\/widgets\/gallery\/views\/adminCarousel.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/faq\/views\/widget.php",
+		"inputAbbreviatedPath": "\/inc\/widgets\/gallery\/views\/adminCarousel.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/inc\/widgets\/gallery\/views\/adminSlider.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/inc\/widgets\/gallery\/views\/adminSlider.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/inc\/widgets\/gallery\/views\/widget.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/inc\/widgets\/gallery\/views\/widget.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1265,33 +1399,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/inc\/widgets\/image-panel\/imagePanel.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/image-panel\/imagePanel.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/inc\/widgets\/image-panel\/views\/admin.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/image-panel\/views\/admin.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/inc\/widgets\/image-panel\/views\/widget.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/image-panel\/views\/widget.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/inc\/widgets\/image\/image.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1402,117 +1509,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/inc\/widgets\/list\/views\/widget.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/inc\/widgets\/map\/css\/admin.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/map\/css\/admin.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/inc\/widgets\/map\/css\/less\/admin.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 1,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/map\/css\/less\/admin.less",
-		"outputAbbreviatedPath": "\/inc\/widgets\/map\/css\/css\/admin.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/inc\/widgets\/map\/css\/less\/widget.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 1,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/map\/css\/less\/widget.less",
-		"outputAbbreviatedPath": "\/inc\/widgets\/map\/css\/css\/widget.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/inc\/widgets\/map\/js\/admin.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/map\/js\/admin.min.js",
-		"outputAbbreviatedPath": "\/inc\/widgets\/map\/js\/admin.min.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 2
-		},
-	"\/inc\/widgets\/map\/js\/dev\/admin.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/map\/js\/dev\/admin.js",
-		"outputAbbreviatedPath": "\/inc\/widgets\/map\/js\/dev\/admin.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 2
-		},
-	"\/inc\/widgets\/map\/js\/dev\/widget.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/map\/js\/dev\/widget.js",
-		"outputAbbreviatedPath": "\/inc\/widgets\/map\/js\/dev\/widget.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 2
-		},
-	"\/inc\/widgets\/map\/js\/widget.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/map\/js\/widget.min.js",
-		"outputAbbreviatedPath": "\/inc\/widgets\/map\/js\/widget.min.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 2
-		},
-	"\/inc\/widgets\/map\/views\/admin.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/map\/views\/admin.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/inc\/widgets\/map\/views\/widget.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/map\/views\/widget.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1637,15 +1633,6 @@
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 2
 		},
-	"\/inc\/widgets\/partial\/partial.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/partial\/partial.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/inc\/widgets\/partial\/views\/admin.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1660,55 +1647,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/inc\/widgets\/partial\/views\/widget.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/inc\/widgets\/posts\/css\/theme.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/posts\/css\/theme.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/inc\/widgets\/posts\/js\/jquery.cleditor.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/posts\/js\/jquery.cleditor.js",
-		"outputAbbreviatedPath": "\/inc\/widgets\/posts\/js\/jquery.cleditor.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 2
-		},
-	"\/inc\/widgets\/posts\/js\/trumbowyg.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/posts\/js\/trumbowyg.min.js",
-		"outputAbbreviatedPath": "\/inc\/widgets\/posts\/js\/trumbowyg.min.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 2
-		},
-	"\/inc\/widgets\/posts\/views\/admin.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/posts\/views\/admin.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/inc\/widgets\/posts\/views\/widget.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/posts\/views\/widget.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1753,11 +1691,11 @@
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 2
 		},
-	"\/inc\/widgets\/tile\/tile.php": {
+	"\/inc\/widgets\/tile\/tiles.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/tile\/tile.php",
+		"inputAbbreviatedPath": "\/inc\/widgets\/tile\/tiles.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1780,50 +1718,86 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/inc\/widgets\/wph\/README.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/wph\/README.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/inc\/widgets\/wph\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/wph\/README.md",
-		"outputAbbreviatedPath": "\/inc\/widgets\/wph\/README.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/inc\/widgets\/wph\/src\/wph-widget-class.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/wph\/src\/wph-widget-class.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/inc\/widgets\/wph\/widget-sample.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/inc\/widgets\/wph\/widget-sample.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/index.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/js\/lib\/classie.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/lib\/classie.js",
+		"outputAbbreviatedPath": "\/js\/lib\/classie.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 2
+		},
+	"\/js\/lib\/custom.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/lib\/custom.js",
+		"outputAbbreviatedPath": "\/js\/lib\/custom.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 2
+		},
+	"\/js\/lib\/jquery.slabtext.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/lib\/jquery.slabtext.js",
+		"outputAbbreviatedPath": "\/js\/lib\/jquery.slabtext.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 2
+		},
+	"\/js\/lib\/responsivemobilemenu.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/lib\/responsivemobilemenu.js",
+		"outputAbbreviatedPath": "\/js\/lib\/responsivemobilemenu.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 2
+		},
+	"\/js\/site.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/site.js",
+		"outputAbbreviatedPath": "\/js\/site.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 2
+		},
+	"\/js\/site.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/site.min.js",
+		"outputAbbreviatedPath": "\/js\/site.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 2
+		},
+	"\/nav\/fixed.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/nav\/fixed.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

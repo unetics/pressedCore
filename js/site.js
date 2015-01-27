@@ -1,0 +1,5 @@
+//@codekit-prepend "lib/jquery.shuffle.min.js"
+//@codekit-prepend "lib/jquery.matchHeight.js"
+//@codekit-prepend "lib/chosen.jquery.js"
+//@codekit-prepend "lib/responsivemobilemenu.js"
+//@codekit-prepend "lib/jquery.slabtext.js"
