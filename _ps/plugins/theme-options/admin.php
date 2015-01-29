@@ -19,23 +19,34 @@
         $form->image('FavIcon');
         $form->text('Copyright');
         $form->text('Analytics');
-        $options = ['fixed' => 'fixed',
-        			'none' => 'none'];
-        $form->select('nav', $options);
                 
         $utility->buffer('footer');
 
-        // links
+        // Colours
         $utility->buffer();
-        $fields = array(
-          array('text', array('Link Text')),
-          array('text', array('Link URL')),
-          array('checkbox', array('External', array(), array('text' => 'This is an external website'), false))
-        );
+			$form->color('background');
+			$form->color('dark');
+			$form->color('light');
+			$form->color('primary');
+			$form->color('secondary');
+        $utility->buffer('colours');
 
-        $form->repeater('Links', $fields, array('label' => 'Custom Links', 'help' => 'Work In Progress will be for social media', 'add_button' => 'Add a Link'));
-        $utility->buffer('links');
+        // Navigation
+        $utility->buffer();
+        	$options = ['fixed' => 'fixed', 'none' => 'none'];
+			$form->select('nav', $options);
+        $utility->buffer('nav');
 
+		// typography
+        $utility->buffer();
+        	$form->text('Base Font Size', array('placeholder'=>'Defaults to 16px'));
+	        $form->text('Small Heading', array('placeholder'=>'Defaults to 20px'));
+	        $form->text('Medium Heading', array('placeholder'=>'Defaults to 24px'));
+	        $form->text('Large Heading', array('placeholder'=>'Defaults to 28px'));
+	        $form->text('Huge Heading', array('placeholder'=>'Defaults to 32px'));	        
+        $utility->buffer('typography');
+        
+        
         // save
         $utility->buffer();
         $form->submit('Save');
@@ -52,9 +63,17 @@
             'title' => 'Settings',
             'content' => $utility->buffer['footer']
           ) )->add_tab( array(
-            'id' => 'links',
-            'title' => 'Links',
-            'content' => $utility->buffer['links']
+            'id' => 'colours',
+            'title' => 'Colours',
+            'content' => $utility->buffer['colours']
+          ) )->add_tab( array(
+            'id' => 'nav',
+            'title' => 'Navigation',
+            'content' => $utility->buffer['nav']
+          ) )->add_tab( array(
+            'id' => 'typography',
+            'title' => 'Typography',
+            'content' => $utility->buffer['typography']
           ) )->make();
 
         $form->close();
@@ -62,5 +81,4 @@
 
     </div>
   </div>
-
 </div>

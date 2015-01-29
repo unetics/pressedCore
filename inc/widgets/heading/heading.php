@@ -23,7 +23,7 @@ class heading extends WP_Widget {
 				// Heading
 				'heading' 		=> '',
 				'headingType' 	=> 'h3',
-				'headingSize' 	=> 'h3',
+				'headingSize' 	=> 'small_heading',
 				'headingAlign' 	=> 'center',
 				'colour' 	=> ''
 			));

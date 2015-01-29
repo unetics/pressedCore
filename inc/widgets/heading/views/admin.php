@@ -7,10 +7,10 @@
     <span class="input-group-addon">
     	<label>Size: </label>
 	    <select class="type" id="<?= $this->get_field_id('headingSize'); ?>" name="<?= $this->get_field_name('headingSize'); ?>">
-	        <option value="h1" <?php selected('h1', $instance['headingSize']);?>>Huge</option>
-	        <option value="h2" <?php selected('h2', $instance['headingSize']);?>>Large</option>
-	        <option value="h3" <?php selected('h3', $instance['headingSize']);?>>Medium</option>
-	        <option value="h4" <?php selected('h4', $instance['headingSize']);?>>Small</option>
+	        <option value="huge_heading" <?php selected('huge_heading', $instance['headingSize']);?>>Huge</option>
+	        <option value="large_heading" <?php selected('large_heading', $instance['headingSize']);?>>Large</option>
+	        <option value="medium_heading" <?php selected('medium_heading', $instance['headingSize']);?>>Medium</option>
+	        <option value="small_heading" <?php selected('small_heading', $instance['headingSize']);?>>Small</option>
 	    </select>
 	    <label>Type: </label>
 	    <select class="type" id="<?= $this->get_field_id('headingType'); ?>" name="<?= $this->get_field_name('headingType'); ?>">
@@ -24,6 +24,7 @@
 			<option  value="align-center" <?php selected('align-center', $headingAlign, true);?> >Center</option>
 			<option  value="align-left"   <?php selected('align-left', $headingAlign, true);?>>Left</option>
 			<option  value="align-right"  <?php selected('align-right', $headingAlign, true);?>>Right</option>
+			<option  value="fit" <?php selected('fit', $headingAlign, true);?>>Full Width</option>
 		</select> 
 		<label>Colour: </label>
 		<select id="<?= $this->get_field_id('colour'); ?>" name="<?= $this->get_field_name('colour'); ?>">
