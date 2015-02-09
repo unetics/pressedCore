@@ -56,3 +56,6 @@ class SiteOrigin_Panels_Widget_tiles extends WP_Widget {
 	}
 
 }
+
+
+register_widget('SiteOrigin_Panels_Widget_tiles');

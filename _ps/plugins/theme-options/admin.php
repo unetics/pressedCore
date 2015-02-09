@@ -26,13 +26,13 @@
         $utility->buffer();
 			$form->color('primary');
 			$form->color('accent');
-			$options = ['none' => '0', 'slight' => '2', 'full' => '10'];
+			$options = array('none' => '0', 'slight' => '2', 'full' => '10');
 			$form->select('rounding', $options);
         $utility->buffer('style');
 
         // Navigation
         $utility->buffer();
-        	$options = ['fixed' => 'fixed', 'none' => 'none'];
+        	$options = array('fixed' => 'fixed', 'none' => 'none');
 			$form->select('nav', $options);
         $utility->buffer('nav');
 
