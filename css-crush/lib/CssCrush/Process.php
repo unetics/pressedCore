@@ -474,9 +474,43 @@ class Process
             }
             else {
                 $curlyMatch->replace('');
+                
             }
         }
     }
+    
+    
+    #############################
+    #  @ifdefine eq blocks.
+
+    protected function resolveIfDefinesEq()
+    {
+        $ifdefinePatt = Regex::make('~@if(?:eq)\s+(?<val>[a-zA-Z0-9_-]+\s+)?(?<name>[a-zA-Z0-9_-]+)\{~ixS');
+
+        $matches = $this->string->matchAll($ifdefinePatt);
+        
+ 
+
+        while ($match = array_pop($matches)) {
+
+            $curlyMatch = new BalancedMatch($this->string, $match[0][1]);
+
+            if (! $curlyMatch->match) {
+                continue;
+            }
+
+            $val = $match['val'][1] != -1;
+            $nameDefined = isset($this->vars[$match['name'][0]]);
+
+            if ($nameDefined == $val) {
+                $curlyMatch->unWrap();
+            }
+            else {
+                $curlyMatch->replace('');
+            }
+        }
+    }
+
 
 
     #############################
@@ -889,6 +923,7 @@ class Process
         $this->placeAllVars();
 
         $this->resolveIfDefines();
+        $this->resolveIfDefinesEq();
 
         $this->resolveSettings();
 

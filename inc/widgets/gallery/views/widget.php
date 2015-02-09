@@ -1,4 +1,4 @@
-<?php $images = tr_post_field("[tesy]",$gallery);?>
+<?php $images = tr_post_field("[gallery_images]",$gallery);?>
 
 <?php switch ($galleryType): 
 	case 'slider': ?>

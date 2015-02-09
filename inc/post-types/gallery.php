@@ -10,5 +10,5 @@ $team->form['editor'] = true; // set
 
 function add_form_content_gallery_editor() {
 $form = tr_form();
-$form->gallerys('tesy');
+$form->gallerys('Gallery Images');
 }

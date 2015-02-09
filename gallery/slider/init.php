@@ -1,6 +1,4 @@
 <?php wp_enqueue_script( 'owlCarousel', get_template_directory_uri().'/gallery/slider/js/owl.carousel.js', array( 'jquery' ) );?>
-<?php wp_enqueue_style( 'owlCarousel', get_template_directory_uri().'/gallery/slider/css/owl.carousel.css', false );?>
-<?php wp_enqueue_style( 'owlCarouselTheme', get_template_directory_uri().'/gallery/slider/css/owl.theme.css', false );?>
 <style type="text/css" media="screen">
 .<?= $id; ?> .item img{
   display: block;
@@ -9,7 +7,7 @@
   margin: 0 auto;
 }
 </style>
-<div class="<?= $id; ?>">
+<div class="<?= $id; ?> slider">
 <?php foreach ($images as $image) { ?>
     <div class="item">
 	    <?php $img = wp_get_attachment_image_src($image, 'full') ?>

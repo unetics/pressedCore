@@ -22,14 +22,13 @@
                 
         $utility->buffer('footer');
 
-        // Colours
+        // Style
         $utility->buffer();
-			$form->color('background');
-			$form->color('dark');
-			$form->color('light');
 			$form->color('primary');
-			$form->color('secondary');
-        $utility->buffer('colours');
+			$form->color('accent');
+			$options = ['none' => '0', 'slight' => '2', 'full' => '10'];
+			$form->select('rounding', $options);
+        $utility->buffer('style');
 
         // Navigation
         $utility->buffer();
@@ -63,9 +62,9 @@
             'title' => 'Settings',
             'content' => $utility->buffer['footer']
           ) )->add_tab( array(
-            'id' => 'colours',
-            'title' => 'Colours',
-            'content' => $utility->buffer['colours']
+            'id' => 'style',
+            'title' => 'Style',
+            'content' => $utility->buffer['style']
           ) )->add_tab( array(
             'id' => 'nav',
             'title' => 'Navigation',

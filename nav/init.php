@@ -6,6 +6,7 @@ switch (tr_option_field("[nav]")) {
 	
 	case "none":
 	// 	Do Nothing
+		get_template_part( 'nav/none' );  
 	break;			
     
     default:

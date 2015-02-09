@@ -34,5 +34,9 @@
 		</select> 
 	</span>
     </div>
+    <p>
+    <input type="checkbox" <?php checked($instance['shadow'], 'on'); ?> id="<?php echo $this->get_field_id('shadow'); ?>" name="<?php echo $this->get_field_name('shadow'); ?>" /> 
+    <label for="<?php echo $this->get_field_id('shadow'); ?>">Drop Shadow?</label>
+</p>
 </div>
 </section>

@@ -1,5 +1,5 @@
 <?php
-class SiteOrigin_Panels_Widget_tile extends WP_Widget {
+class SiteOrigin_Panels_Widget_tiles extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'tile',

@@ -25,7 +25,8 @@ class heading extends WP_Widget {
 				'headingType' 	=> 'h3',
 				'headingSize' 	=> 'small_heading',
 				'headingAlign' 	=> 'center',
-				'colour' 	=> ''
+				'colour' 	=> '',
+				'shadow' 	=> ''
 			));
 			extract($instance);
 			include(__DIR__.'/views/admin.php');
@@ -39,6 +40,7 @@ class heading extends WP_Widget {
 			$instance['headingSize'] = $new_instance['headingSize'];
 			$instance['headingAlign'] = $new_instance['headingAlign'];
 			$instance['colour'] = $new_instance['colour'];
+			$instance['shadow'] = $new_instance['shadow'];
 		return $instance;
 	}
 	

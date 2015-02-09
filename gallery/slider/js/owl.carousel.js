@@ -342,7 +342,7 @@ if (typeof Object.create !== "function") {
 
         calculateWidth : function () {
             var base = this;
-            base.itemWidth = Math.round(base.$elem.width() / base.options.items);
+            base.itemWidth = (base.$elem.width() / base.options.items);
         },
 
         max : function () {
@@ -409,12 +409,13 @@ if (typeof Object.create !== "function") {
 
             base.buttonPrev = $("<div/>", {
                 "class" : "owl-prev",
-                "html" : base.options.navigationText[0] || ""
+                "html" : "<svg width='60px' height='80px' viewBox='0 0 50 80' xml:space='preserve'><polyline fill='none' stroke='#FFFFFF' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' points='45.63,75.8 0.375,38.087 45.63,0.375'/></svg>"
+
             });
 
             base.buttonNext = $("<div/>", {
                 "class" : "owl-next",
-                "html" : base.options.navigationText[1] || ""
+                "html" : "<svg width='60px' height='80px' viewBox='0 0 50 80' xml:space='preserve'><polyline fill='none' stroke='#FFFFFF' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' points='0.375,0.375 45.63,38.087 0.375,75.8 '/></svg>"
             });
 
             buttonsWrapper
@@ -1155,7 +1156,7 @@ if (typeof Object.create !== "function") {
                 }
                 if ($item.data("owl-loaded") === undefined) {
                     $lazyImg.hide();
-                    $item.addClass("loading").data("owl-loaded", "checked");
+					$item.append( "<div class='loader'>Loading...</div>" ).data("owl-loaded", "checked");
                 }
                 if (base.options.lazyFollow === true) {
                     follow = itemNumber >= base.currentItem;
@@ -1181,7 +1182,8 @@ if (typeof Object.create !== "function") {
             }
 
             function showImage() {
-                $item.data("owl-loaded", "loaded").removeClass("loading");
+                $item.data("owl-loaded", "loaded");
+                $item.find( '.loader' ).detach();
                 $lazyImg.removeAttr("data-src");
                 if (base.options.lazyEffect === "fade") {
                     $lazyImg.fadeIn(400);

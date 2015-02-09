@@ -1,3 +1,5 @@
+//@codekit-prepend "lib/ResizeSensor.js"
+//@codekit-prepend "lib/ElementQueries.js"
 //@codekit-prepend "lib/jquery.shuffle.min.js"
 //@codekit-prepend "lib/jquery.matchHeight.js"
 //@codekit-prepend "lib/chosen.jquery.js"

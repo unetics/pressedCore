@@ -1,1 +1,1 @@
-<<?=$headingType?> class="<?=$colour?> <?=$headingAlign?> <?=$headingSize?>"><?=$heading?></<?=$headingType?>>
+<<?=$headingType?> class="<?=$colour?> <?=$headingAlign?> <?=$headingSize?> <?php if('on' == $shadow ) {echo('shadow');}?>"><?=$heading?></<?=$headingType?>>
