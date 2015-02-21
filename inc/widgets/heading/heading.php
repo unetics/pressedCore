@@ -13,7 +13,7 @@ class heading extends WP_Widget {
 			'Heading',
 			array(
 				'classname' 	=> 'heading',
-				'description' 	=> 'Add a Heading'
+				'description' 	=> 'Add a Text Heading'
 			));	
 	}
 	

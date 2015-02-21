@@ -1,11 +1,4 @@
 <?php
-/*
-Plugin Name: Image Widget
-Description: A simple image widget that uses the native WordPress media manager to add image widgets to your site.
-Author: Mitchell Bray
-Version: 1
-*/
-
 // Load the widget on widgets_init
 function tribe_load_image_widget() {
 	register_widget('Tribe_Image_Widget');
@@ -28,7 +21,7 @@ class Tribe_Image_Widget extends WP_Widget {
 	 */
 	function Tribe_Image_Widget() {
 		load_plugin_textdomain( 'image_widget', false, trailingslashit(basename(dirname(__FILE__))) . 'lang/');
-		$widget_ops = array( 'classname' => 'widget_sp_image', 'description' => __( 'Showcase a single image with a Title, URL, and a Description', 'image_widget' ) );
+		$widget_ops = array( 'classname' => 'widget_sp_image', 'description' => 'Create a Place for an Image' );
 		$control_ops = array( 'id_base' => 'widget_sp_image' );
 		$this->WP_Widget('widget_sp_image','Image Widget', $widget_ops, $control_ops);
 		if ( $this->use_old_uploader() ) {

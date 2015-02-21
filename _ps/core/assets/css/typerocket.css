@@ -12,8 +12,6 @@
 
 .tr-dev-alert-helper {
   padding: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   background: #fff;
   border:1px solid #b8d85d;
@@ -181,38 +179,21 @@
   display: block;
 }
 
-.tr-gallery-list a,
-.tr-gallery-list a:before {
-  font-family: 'typerocket-icons';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  font-size: 16px;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .tr-gallery-list a {
-  color: #A00;
+  color: white;
+  background: #0074A2;
   position: absolute;
-  right: -8px;
-  top: -8px;
+  right: 0;
+  top: 0;
   z-index: 1000;
   text-decoration: none;
-  border: solid #DFDFDF 1px;
   padding: 6px;
-  border-radius: 25px;
-  background: #fff;
   display: none;
 }
 
 .tr-gallery-list a:hover {
-  color: #f00;
+  background: #D54E21;
+  color: white;
   cursor: pointer;
 }
 
@@ -385,20 +366,6 @@
   }
 
 
-
-/* Dev
-
-<div class="control">
-  <div class="dev">
-    <span class="info">
-      <span class="field">tr_field('about[person]');</span>
-    </span>
-  </div>
-  <textarea id="control2"></textarea>
-</div>
-
-*/
-
 .typerocket-container .dev {
   font-weight: normal;
   display: inline-block;
@@ -434,6 +401,9 @@
   color: #999999;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
+}
+.typerocket-container .dev .dashicons{
+	font-size: 16px;
 }
 
 .typerocket-container .dev .nav .field {

@@ -13,7 +13,7 @@ class divider extends WP_Widget {
 			'Divider', //name
 			array(
 				'classname' 	=> 'divider',
-				'description' 	=> 'Get some space'
+				'description' 	=> 'Create Vertical Space Between Widgets'
 			)
 		);
 		// Register styles

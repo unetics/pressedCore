@@ -1,24 +1,13 @@
 <?php
-/*
-Plugin Name: button Widget
-Version: 1.2.2
-Description: a button
-Author: Mitchell Bray
-*/
 class button extends WP_Widget {
 		public function __construct() {
 			// Instantiate the parent object
 			parent::__construct(
 				'button', // Base ID
 				'Button', // Name
-				array('description' => 'Create a button'), // Args
-				array('width' => 600, 'height' => 550)
+				array('description' => 'Create a button link or action'), // Args
+				array('icon' => 'dashicons dashicons-admin-links')
 			);
-				// Register styles
-				add_action('admin_print_styles', array( $this, 'register_admin_styles'));
-				// Register scripts
-				add_action('admin_enqueue_scripts', array( $this, 'register_admin_scripts'));
-				add_action('wp_enqueue_scripts', array( $this, 'register_widget_scripts'));
 		}
 
 		public function widget($args, $instance) {
@@ -42,7 +31,7 @@ class button extends WP_Widget {
 					'btnPhoneNumber' => '',
 					'btnOnclick' => '',
 					'btnWindow' => '', 
-					'btnStyle' => '',
+					'btnStyle' => 'default',
 					'btnAlign' => '', 
 					'btnPostLink' => '',
 					'btnFile' => '',
@@ -67,9 +56,6 @@ class button extends WP_Widget {
 			$instance['btnPostLink'] = $new_instance['btnPostLink'];
 			$instance['btnFile'] = $new_instance['btnFile'];
 			return $instance;
-		}
-		function register_admin_styles(){}
-		function register_admin_scripts(){}
-		function register_widget_scripts(){}		
+		}	
 	}
 add_action('widgets_init', create_function('', 'register_widget("button");'));

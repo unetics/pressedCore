@@ -24,7 +24,7 @@
 			}
 			var $menulist = $(this).children('.rmm-main-list').html();
 			var $menucontrols ="<div class='rmm-toggled-controls'><div class='rmm-toggled-title'>" + menutitle + "</div><div class='rmm-button'><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></div></div>";
-			$(this).prepend("<div class='rmm-toggled rmm-closed'>"+$menucontrols+"<ul>"+$menulist+"</ul></div>");
+			$(this).prepend("<div class='rmm-toggled rmm-closed'>"+$menucontrols+"<div class='rmm-toggled-items'><ul>"+$menulist+"</ul></div></div>");
 	
 		});
 	}
@@ -34,7 +34,7 @@
 		$('.rmm').each(function() {
 			var $width = $(this).attr('data-width');
 			$width = $width.replace('px', ''); 
-			if ( $(this).parent().width() < $width*1.01 ) {
+			if ($(this).parent().width() < $width*1.01 ) {
 				$(this).children('.rmm-main-list').hide(0);
 				$(this).children('.rmm-toggled').show(0);
 			}
@@ -42,7 +42,11 @@
 				$(this).children('.rmm-main-list').show(0);
 				$(this).children('.rmm-toggled').hide(0);
 			}
-		});		
+		});
+		//  Set scroll if menu too tall	
+		var $height = $(window).height() - $('.rmm-toggled-controls').height();	
+		$('.rmm-toggled-items').css('maxHeight', $height+'px');
+		$('.rmm-toggled-items').css('overflow', 'scroll');
 	}
 	
 	jQuery(function() {
@@ -51,17 +55,32 @@
 		 adaptMenu();
 
 		 /* slide down mobile menu on click */	 
-		 $('.rmm-toggled, .rmm-toggled .rmm-button').click(function(){
-		 	if ( $(this).is(".rmm-closed")) {
-			 	 $(this).find('ul').stop().show(300);
-			 	 $(this).removeClass("rmm-closed");
+		 $('.rmm-toggled-controls .rmm-button').click(function(){
+			 var $thisMenu =  $(this).parents('.rmm-toggled:first');
+		 	if ( $($thisMenu).is(".rmm-closed")) {
+			 	 $($thisMenu).find('ul').stop().slideDown(300);
+			 	 $($thisMenu).removeClass("rmm-closed");
+			 	 submenuItems();
 		 	}
 		 	else {
-				$(this).find('ul').stop().hide(300);
-				$(this).addClass("rmm-closed");
+				$($thisMenu).find('ul').stop().slideUp(300);
+				$($thisMenu).addClass("rmm-closed");
 		 	}		
 		});	
 	});
+	
+	function submenuItems() {
+		$('.rmm-toggled ul>li:has(ul)').each(function() {
+			$(this).append('<div class="sub-toggle"><div class="icon-plus"></div></div>');
+			$(this).find('ul').slideToggle(500);
+			});
+		$('.sub-toggle').click(function(){
+			$(this).siblings('ul').slideToggle(500);
+			$(this).children('div').toggleClass( 'icon-plus icon-minus' );
+		});	
+
+	}
+	
 	
 	/* 	hide mobile menu on resize */
 	jQuery(window).resize(function() {

@@ -3,7 +3,7 @@ $team = tr_post_type('Gallery', 'Gallery', array(
 										'supports' => array('title', 'thumbnail'  ),
 										));
 $team->id = 'gallery';
-$team->icon('play');
+$team->icon('gallery');
 $team->title = 'Enter Gallery Name';
 $team->form['editor'] = true; // set
 

@@ -10,7 +10,6 @@ function widgets_icons($widgets){
 	$widgets['SiteOrigin_Widget_GoogleMap_Widget']['icon'] = 'dashicons dashicons-location-alt';
 	return $widgets;
 }
-remove_filter('siteorigin_panels_widgets', 'siteorigin_panels_add_recommended_widgets');
 remove_filter('siteorigin_panels_widgets', 'siteorigin_widget_add_bundle_groups', 11);
 add_filter('siteorigin_panels_widgets', 'widgets_icons');
 

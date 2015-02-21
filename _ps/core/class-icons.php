@@ -1,6 +1,7 @@
 <?php
 class tr_icons {
   static $icon = array(
+	'gallery' =>'\f161',
     'home' => '\e600',
     'office' => '\e601',
     'newspaper' => '\e602',

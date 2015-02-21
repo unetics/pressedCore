@@ -1,5 +1,4 @@
 <?php
-
 class tr_post_type extends tr_base {
 
   public $id = null;
@@ -16,6 +15,7 @@ class tr_post_type extends tr_base {
     $name = strtolower($name);
     $this->icon = tr_icons::$icon[$name];
     add_action( 'admin_head', array($this, 'set_icon') );
+
     return $this;
   }
 
@@ -23,7 +23,6 @@ class tr_post_type extends tr_base {
 
     <style type="text/css">
       #adminmenu #menu-posts-<?php echo $this->id; ?> .wp-menu-image:before {
-        font: 400 15px/1 'typerocket-icons' !important;
         content: '<?php echo $this->icon; ?>';
         speak: none;
         -webkit-font-smoothing: antialiased;
@@ -170,7 +169,7 @@ class tr_post_type extends tr_base {
       if(function_exists($func)) :
         $func($post);
       elseif(TR_DEBUG == true) :
-        echo "<div class=\"tr-dev-alert-helper\"><i class=\"icon tr-icon-bug\"></i> Add content here by defining: <code>function {$func}() {}</code></div>";
+        echo "<div class=\"tr-dev-alert-helper\"> Add content here by defining: <code>function {$func}() {}</code></div>";
       endif;
       echo '</div>';
 

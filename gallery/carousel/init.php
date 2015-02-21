@@ -13,12 +13,16 @@
 }
 </style>
 <div class="<?= $id; ?>">
-<?php foreach ($images as $image) { ?>
-    <div class="item">
-	    <?php $img = wp_get_attachment_image_src($image) ?>
-	    <img class="lazyOwl" data-src="<?= $img['0'];?>" alt="Lazy Owl Image">
-	</div>
-<?php } ?>	
+<?php if ( is_array($images)): ?>
+	<?php foreach ($images as $image) { ?>
+	    <div class="item">
+		    <?php $img = wp_get_attachment_image_src($image) ?>
+		    <img class="lazyOwl" data-src="<?= $img['0'];?>" alt="Lazy Owl Image">
+		</div>
+	<?php } ?>	
+<?php else: ?>
+<p>You need to add images to your gallery</p>
+<?php endif ?>
 </div>
 
 <script>

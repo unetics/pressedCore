@@ -11,7 +11,7 @@ class gallery extends WP_Widget {
 			parent::__construct(
 				'gallery', // Base ID
 				'Gallery', // Name
-				array('description' => 'Create a gallery'), // Args
+				array('description' => 'Select a Gallery from Galleries Menu'), // Args
 				array('width' => 600, 'height' => 550)				
 			);
 		}

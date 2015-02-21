@@ -1,5 +1,3 @@
-<!-- // <?= get_widget_field(); ?> -->
-
 <section class="well">
 	
 <div class="heading">

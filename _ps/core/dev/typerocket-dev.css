@@ -15,13 +15,3 @@
   padding: 3px;
   font-size: 14px;
 }
-
-#adminmenu #toplevel_page_tr_dev .menu-icon-generic div.wp-menu-image:before {
-  font: 400 15px/1.5em 'typerocket-icons' !important;
-  content: "\e66d";
-  speak: none;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}

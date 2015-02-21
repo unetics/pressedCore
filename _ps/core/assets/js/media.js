@@ -122,7 +122,7 @@ jQuery(document).ready(function($) {
 
         var field = $(button).parent().prev().clone();
 
-        var item = $('<li class="image-picker-placeholder"><a href="#remove" class="tr-icon-remove2" title="Remove Image"></a><img src="'+attachment[i].sizes.thumbnail.url+'"/></li>');
+        var item = $('<li class="image-picker-placeholder"><a href="#remove" class="dashicons dashicons-trash" title="Remove Image"></a><img src="'+attachment[i].sizes.thumbnail.url+'"/></li>');
 
         $(item)
           .append(field.val(attachment[i].id).attr('name', field.attr('name') + '[]'));

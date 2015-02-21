@@ -12,7 +12,7 @@ class panel extends WP_Widget {
 			parent::__construct(
 				'panel', // Base ID
 				'Panel', // Name
-				array('description' => 'Create a Panel')
+				array('description' => 'Create a Panel with Heading and Text')
 			);
 			
 		}

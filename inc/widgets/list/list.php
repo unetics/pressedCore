@@ -11,7 +11,7 @@ class lists extends WP_Widget {
 			parent::__construct(
 				'lists', // Base ID
 				'Lists', // Name
-				array('description' => 'Create a lists'), // Args
+				array('description' => 'Create a Stylised List'), // Args
 				array('width' => 600, 'height' => 550)
 			);
 				// Register styles

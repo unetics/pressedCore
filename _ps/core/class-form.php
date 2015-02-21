@@ -145,7 +145,6 @@ class tr_form extends tr_base {
   private function update() {
 
     $crud = new tr_crud();
-
     switch($this->controller) {
       case 'post' :
         $crud->save_post( $this->item_id, 'update', $this );
@@ -289,10 +288,10 @@ class tr_form extends tr_base {
     if(TR_DEBUG === true && $this->current_field->builtin == false && is_admin() && $this->current_field->debuggable == true) {
       $html =
       "<div class=\"dev\">
-        <span class=\"debug\"><i class=\"tr-icon-bug\"></i></span>
+        <span class=\"debug\"></span>
           <span class=\"nav\">
           <span class=\"field\">
-            <i class=\"tr-icon-code\"></i><span>tr_{$this->controller}_field(\"{$this->current_field->brackets}\");</span>
+            <span class='dashicons dashicons-migrate'></span><span>tr_{$this->controller}_field(\"{$this->current_field->brackets}\");</span>
           </span>
         </span>
       </div>";
@@ -580,6 +579,9 @@ public function gallerys($name, $attr = array(), $settings = array(), $label = t
     $this->add_field($field, $settings, $label);
 
     return $this;
+  }
+  public function updateCss() {
+    do_action( 'updateCss' );
   }
 
 }

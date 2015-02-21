@@ -28,7 +28,7 @@ class tr_field_gallerys extends tr_field {
         $list .= tr_html::element('li', array(
           'class' => 'image-picker-placeholder'
         ), 
-        '<a href="#remove" class="tr-icon-remove2" title="Remove Image"></a><a href="#remove" title="Info"><div class="dashicons dashicons-trash"></div></a>'.$infobut . $image . $input );
+        '<a href="#remove" title="Info"><div class="dashicons dashicons-trash"></div></a>'.$infobut . $image . $input );
 
       }
     }

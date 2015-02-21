@@ -55,7 +55,6 @@ class tr_enhance extends tr_base {
 
   public function add_css() {
     if(is_admin()){
-      wp_enqueue_style( 'typerocket-tr-icons', tr::$paths['urls']['assets'] . '/css/tr-icons.css' );
       wp_enqueue_style( 'typerocket-styles', tr::$paths['urls']['assets'] . '/css/typerocket.css' );
       wp_enqueue_style( 'typerocket-tabs', tr::$paths['urls']['assets'] . '/css/tabs.css' );
 

@@ -58,7 +58,7 @@ class tr_meta_box extends tr_base {
     if(function_exists($func)) :
       $func($object, $box);
     elseif(TR_DEBUG == true) :
-      echo "<div class=\"tr-dev-alert-helper\"><i class=\"icon tr-icon-bug\"></i> Add content here by defining: <code>function {$func}() {}</code></div>";
+      echo "<div class=\"tr-dev-alert-helper\"></div>";
     endif;
     echo '</div>';
   }

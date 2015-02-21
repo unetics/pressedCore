@@ -4,6 +4,7 @@
   $form->id = 'tr_theme_options';
   $form->make();
   $form->process(); 
+  $form->updateCss(); 
 ?>
 
 <div class="wrap">
