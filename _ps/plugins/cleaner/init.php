@@ -19,7 +19,6 @@ function head_cleanup() {
 }
 add_action('admin_init', 'head_cleanup');
 
-/* remove_filter('the_content', 'wpautop'); */
 /* Remove navbar when in site preview */
 add_filter('show_admin_bar', '__return_false');
 /* Remove the WordPress version from RSS feeds  */
@@ -67,19 +66,6 @@ function custom_login_logo() {
     </style>';
 }
 add_action('login_head', 'custom_login_logo');
-
-// changing the Login Page Logo URL
-   function custom_login_logo_url(){
-     return home_url(); // put any URL in place of the WordPress one or use the home URL
-   }
-   add_filter('login_headerurl', 'custom_login_logo_url');
-   
-   function custom_login_logo_title(){
-    return get_option('blogname');  // changing the title from "Powered by WordPress" to your website name.     
-    }
-    add_filter('login_headertitle', 'custom_login_logo_title');
-    
-add_filter( 'edit_post_link', '__return_null' );
 
 function remove_menus(){
   

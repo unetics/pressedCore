@@ -249,7 +249,6 @@ function fn__a_adjust($input) {
     return Color::test($color) ? Color::colorAdjust($color, array(0, 0, 0, $a)) : '';
 }
 
-
 function fn__this($input, $context) {
 
     $args = Functions::parseArgsSimple($input);
