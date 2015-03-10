@@ -55,7 +55,7 @@
 		 adaptMenu();
 
 		 /* slide down mobile menu on click */	 
-		 $('.rmm-toggled-controls .rmm-button').click(function(){
+		 $('.rmm-toggled-controls .rmm-button, #primary-menu-trigger').click(function(){
 			 var $thisMenu =  $(this).parents('.rmm-toggled:first');
 		 	if ( $($thisMenu).is(".rmm-closed")) {
 			 	 $($thisMenu).find('ul').stop().slideDown(300);

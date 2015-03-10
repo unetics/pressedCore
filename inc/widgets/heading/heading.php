@@ -26,7 +26,7 @@ class heading extends WP_Widget {
 				'headingSize' 	=> 'small_heading',
 				'headingAlign' 	=> 'center',
 				'colour' 	=> '',
-				'shadow' 	=> ''
+				'shadow' 	=> false
 			));
 			extract($instance);
 			include(__DIR__.'/views/admin.php');

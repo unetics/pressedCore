@@ -33,7 +33,7 @@
 
         // Navigation
         $utility->buffer();
-        	$options = array('fixed' => 'fixed', 'none' => 'none');
+        	$options = array('fixed' => 'fixed', 'trans' => 'trans', 'none' => 'none');
 			$form->select('nav', $options);
         $utility->buffer('nav');
 
@@ -43,7 +43,25 @@
 	        $form->text('Small Heading', array('placeholder'=>'Defaults to 20px'));
 	        $form->text('Medium Heading', array('placeholder'=>'Defaults to 24px'));
 	        $form->text('Large Heading', array('placeholder'=>'Defaults to 28px'));
-	        $form->text('Huge Heading', array('placeholder'=>'Defaults to 32px'));	        
+	        $form->text('Huge Heading', array('placeholder'=>'Defaults to 32px'));	  
+	        ?>
+<div class="control-section">
+        <div class="control-label"><span class="label">Larger Heading <div class="dev">
+        <span class="debug"></span>
+          <span class="nav">
+          <span class="field">
+            <span class="dashicons dashicons-migrate"></span><span>tr_option_field("[larger_heading]");</span>
+          </span>
+        </span>
+      </div></span></div>
+        <div class="control">
+          <input type="text" name="tr[larger_heading]" value="<?=tr_option_field('[larger_heading]');?>" id="tr_larger_heading" placeholder="Defaults to 128px">
+        </div>
+      </div>
+	        <h2>heading</h2>
+	        <div>stuff</div>
+	        
+	        <?Php      
         $utility->buffer('typography');
         
         

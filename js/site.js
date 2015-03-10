@@ -5,3 +5,4 @@
 //@codekit-prepend "lib/chosen.jquery.js"
 //@codekit-prepend "lib/responsivemobilemenu.js"
 //@codekit-prepend "lib/jquery.slabtext.js"
+//@codekit-prepend "lib/jquery.reveal.js"

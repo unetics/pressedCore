@@ -10,14 +10,16 @@ define('TR_FOLDER', '_ps');
 */
 if(isset($_SERVER['APPLICATION_ENV']) && $_SERVER['APPLICATION_ENV'] == 'development') {
 define('TR_DEBUG', true);
+}else{
+
+	tr::add_plugin('ie-eq');
 }
 /*
 |--------------------------------------------------------------------------
 | Plugins
 |--------------------------------------------------------------------------
 */
-tr::add_plugin('cleaner');
-tr::add_plugin('ie-eq');
+	tr::add_plugin('cleaner');
 tr::add_plugin('post-type-autoload');
 tr::add_plugin('save');
 tr::add_plugin('short-code-autoload');

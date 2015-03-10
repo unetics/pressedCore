@@ -1,8 +1,10 @@
 <nav class="rmm">
 	<ul>
 		<?php if ( tr_option_field("[logo]") ) { ?>
+		<?= $logo = wp_get_attachment_image_src( tr_option_field("[logo]"), 'full' ); ?>
 		<li class="logo">
-			<a href="/"><?php echo wp_get_attachment_image( tr_option_field("[logo]"), 'full' ); ?></a>
+			<a href="/">
+				<img src="<?php echo $logo[0]; ?>"></a>
 		</li>
 		<?php } 
 			
