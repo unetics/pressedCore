@@ -1,18 +1,8 @@
-/*
+/* Modal based on
  * jQuery Reveal Plugin 1.0
- * www.ZURB.com
- * Copyright 2010, ZURB
- * Free to use under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
 */
-
-
 (function($) {
 
-/*---------------------------
- Defaults for Reveal
-----------------------------*/
-	 
 /*---------------------------
  Listener for data-reveal-id attributes
 ----------------------------*/
@@ -34,11 +24,13 @@
 	    	animation: 'fadeAndPop', //fade, fadeAndPop, none
 		    animationspeed: 300, //how fast animtions are
 		    closeonbackgroundclick: true, //if you click background will modal close?
-		    dismissmodalclass: 'close-reveal-modal' //the class of a button or element that will close an open modal
+		    dismissmodalclass: 'close-modal', //the class of a button or element that will close an open modal
+		    close: true
+		    
     	}; 
     	
         //Extend dem' options
-        var options = $.extend({}, defaults, options); 
+        options = $.extend({}, defaults, options); 
 	
         return this.each(function() {
         
@@ -49,14 +41,21 @@
         		topMeasure  = parseInt(modal.css('top')),
 				topOffset = modal.height() + topMeasure,
           		locked = false,
-				modalBG = $('.reveal-modal-bg');
+				modalBG = $('.modal-bg'),
+				modalCB = $('.' + options.dismissmodalclass);
 
 /*---------------------------
  Create Modal BG
 ----------------------------*/
-			if(modalBG.length == 0) {
-				modalBG = $('<div class="reveal-modal-bg" />').insertAfter(modal);
-			}		    
+			if(modalBG.length === 0) {
+				modalBG = $('<div class="modal-bg" />').insertAfter(modal);
+			}
+/*---------------------------
+ Create Modal Close Button
+----------------------------*/			
+			if(modalCB.length === 0 && options.close === true) {
+				modalCB = $('<a class="close-modal">&#215;</a>').appendTo(modal);
+			}			    
      
 /*---------------------------
  Open & Close Animations
@@ -67,7 +66,7 @@
 				$('.' + options.dismissmodalclass).unbind('click.modalEvent');
 				if(!locked) {
 					lockModal();
-					if(options.animation == "fadeAndPop") {
+					if(options.animation === "fadeAndPop") {
 						modal.css({'top': $(document).scrollTop()-topOffset, 'opacity' : 0, 'visibility' : 'visible'});
 						modalBG.fadeIn(options.animationspeed/2);
 						modal.delay(options.animationspeed/2).animate({
@@ -75,17 +74,17 @@
 							"opacity" : 1
 						}, options.animationspeed,unlockModal());					
 					}
-					if(options.animation == "fade") {
+					if(options.animation === "fade") {
 						modal.css({'opacity' : 0, 'visibility' : 'visible', 'top': $(document).scrollTop()+topMeasure});
 						modalBG.fadeIn(options.animationspeed/2);
 						modal.delay(options.animationspeed/2).animate({
 							"opacity" : 1
 						}, options.animationspeed,unlockModal());					
 					} 
-					if(options.animation == "none") {
+					if(options.animation === "none") {
 						modal.css({'visibility' : 'visible', 'top':$(document).scrollTop()+topMeasure});
 						modalBG.css({"display":"block"});	
-						unlockModal()				
+						unlockModal();				
 					}
 				}
 				modal.unbind('reveal:open');
@@ -95,7 +94,7 @@
 			modal.bind('reveal:close', function () {
 			  if(!locked) {
 					lockModal();
-					if(options.animation == "fadeAndPop") {
+					if(options.animation === "fadeAndPop") {
 						modalBG.delay(options.animationspeed).fadeOut(options.animationspeed);
 						modal.animate({
 							"top":  $(document).scrollTop()-topOffset + 'px',
@@ -105,7 +104,7 @@
 							unlockModal();
 						});					
 					}  	
-					if(options.animation == "fade") {
+					if(options.animation === "fade") {
 						modalBG.delay(options.animationspeed).fadeOut(options.animationspeed);
 						modal.animate({
 							"opacity" : 0
@@ -114,7 +113,7 @@
 							unlockModal();
 						});					
 					}  	
-					if(options.animation == "none") {
+					if(options.animation === "none") {
 						modal.css({'visibility' : 'hidden', 'top' : topMeasure});
 						modalBG.css({'display' : 'none'});	
 					}		
@@ -126,21 +125,21 @@
  Open and add Closing Listeners
 ----------------------------*/
         	//Open Modal Immediately
-    	modal.trigger('reveal:open')
+    	modal.trigger('reveal:open');
 			
 			//Close Modal Listeners
 			var closeButton = $('.' + options.dismissmodalclass).bind('click.modalEvent', function () {
-			  modal.trigger('reveal:close')
+			  modal.trigger('reveal:close');
 			});
 			
 			if(options.closeonbackgroundclick) {
-				modalBG.css({"cursor":"pointer"})
+				modalBG.css({"cursor":"pointer"});
 				modalBG.bind('click.modalEvent', function () {
-				  modal.trigger('reveal:close')
+				  modal.trigger('reveal:close');
 				});
 			}
 			$('body').keyup(function(e) {
-        		if(e.which===27){ modal.trigger('reveal:close'); } // 27 is the keycode for the Escape key
+        		if(e.which === 27){ modal.trigger('reveal:close'); } // 27 is the keycode for the Escape key
 			});
 			
 			
@@ -155,6 +154,6 @@
 			}	
 			
         });//each call
-    }//orbit plugin call
+    };
 })(jQuery);
         

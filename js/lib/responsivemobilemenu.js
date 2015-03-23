@@ -16,10 +16,10 @@
 		/* 	build toggled dropdown menu list */
 		$('.rmm').each(function() {	
 			var menutitle = $(this).attr("data-menu-title");
-			if ( menutitle == "" ) {
+			if ( menutitle === "" ) {
 				menutitle = "Menu";
 			}
-			else if ( menutitle == undefined ) {
+			else if ( menutitle === undefined ) {
 				menutitle = "Menu";
 			}
 			var $menulist = $(this).children('.rmm-main-list').html();

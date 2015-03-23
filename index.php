@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php get_template_part( 'fonts/init' ); ?>
 <body>
 	<?php get_template_part( 'nav/init' ); ?>
 	<main>

@@ -30,7 +30,6 @@ function parralax_row_style_fields($fields) {
       'description' => 'A CSS Id',
       'priority'    => 5,
   );
-
   return $fields;
 }
 
