@@ -21,7 +21,7 @@
         $form->text('Copyright');
         $form->text('Analytics');
                 
-        $utility->buffer('footer');
+        $utility->buffer('settings');
 
         // Style
         $utility->buffer();
@@ -36,6 +36,17 @@
         	$options = array('fixed' => 'fixed', 'trans' => 'trans', 'none' => 'none');
 			$form->select('nav', $options);
         $utility->buffer('nav');
+        
+        // Footer
+        $utility->buffer();
+        	$options = array(
+        					'base' 						=> 'base',
+        					'Right hand Widget area' 	=> 'rhwa',
+        					'3 Column widget area' 		=> '3col',
+        					'none' 						=> 'none'
+        					);
+			$form->select('footer', $options);
+        $utility->buffer('footer');
 
 		// typography
         $utility->buffer();
@@ -72,7 +83,7 @@
         $screen->add_tab( array(
             'id' => 'Settings',
             'title' => 'Settings',
-            'content' => $utility->buffer['footer']
+            'content' => $utility->buffer['settings']
           ) )->add_tab( array(
             'id' => 'style',
             'title' => 'Style',
@@ -81,6 +92,10 @@
             'id' => 'nav',
             'title' => 'Navigation',
             'content' => $utility->buffer['nav']
+          ) )->add_tab( array(
+            'id' => 'footer',
+            'title' => 'Footer',
+            'content' => $utility->buffer['footer']
           ) )->add_tab( array(
             'id' => 'typography',
             'title' => 'Typography',

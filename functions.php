@@ -54,3 +54,46 @@ function getContrastYIQ($hexcolor){
 	return ($yiq >= 128) ? 'black' : 'white';
 }
 
+
+
+switch (tr_option_field("[footer]")) {
+	case "rhwa":
+    	register_sidebar( array(
+			'name' => 'Footer Sidebar 1',
+			'id' => 'footer-sidebar-1',
+			'description' => 'Appears in the footer area',
+			'before_widget' => '',
+			'after_widget' => '',
+			) );    
+	break;
+	case "3col":
+    	register_sidebar( array(
+			'name' => 'Footer Sidebar 1',
+			'id' => 'footer-sidebar-1',
+			'description' => 'Appears in the footer area',
+			'before_widget' => '',
+			'after_widget' => '',
+			) );
+			register_sidebar( array(
+			'name' => 'Footer Sidebar 2',
+			'id' => 'footer-sidebar-2',
+			'description' => 'Appears in the footer area',
+			'before_widget' => '',
+			'after_widget' => '',
+			) );
+			register_sidebar( array(
+			'name' => 'Footer Sidebar 3',
+			'id' => 'footer-sidebar-3',
+			'description' => 'Appears in the footer area',
+			'before_widget' => '',
+			'after_widget' => '',
+			) );   
+	break;
+	case "none":
+	// 	Do Nothing
+	break;			
+    
+    default:
+    	// 	Do Nothing
+	break;	
+} 
